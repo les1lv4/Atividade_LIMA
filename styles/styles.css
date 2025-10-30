@@ -8,7 +8,7 @@ html,
 body{
     width: 100%;
     height: 100%;
-    background-color: #0b2b26;
+    background-color: #451952;
 
     /* df, jcc e aic */
     display: flex;
@@ -19,14 +19,13 @@ body{
 .container{
     width: 90%;
     height: 80%;
-    background-color: #0b2b26;
+    background-color: #522B5B;
 
     border-radius: 10px;
-    box-shadow: 0 0 10px #8eb69b;
+    box-shadow: 0 0 10px #FBE4D8;
 
     display: flex;
 
-    /* Com este comando apenas os elementos dentro do container são mostrados */
     overflow: hidden;
     padding: 20px;
 }
@@ -38,18 +37,14 @@ body{
 }
 
 .img{
-    background-image: url("../image/download.jpg");
+    background-image: url("../image/85cff7696dbc74ad7da1549e4987d8c8.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
 }
 
 .login{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center*/
-
     padding-left: 50px;
 
     display: flex;
@@ -75,45 +70,59 @@ form{
 }
 
 form input{ 
-/* Existem 4 paddings (top, right, bottom e left) */
-/* No css para economizarmos linha, podemos utilizar shorthands (atalhos) */
-/* Shorthand é um comando que pode englobar várias, nesse caso, o comando padding engloba os 4 paddings possiveis! */
-/* padding: 10px; -> Coloca 10px na parte superior (top), direita (right), inferior (bottom) e esquerda (left) */
-/* padding: 10px 20px; -> Coloca 10px na parte superior (top) e inferior (bottom), 20px nas laterais (right e left) */
-/* padding: 10px 20px 15px 40px; -> Coloca 10px na parte superior (top), 20px na direita (right),
- 15px inferior (bottom) e 40 px na esquerda (left) */
-
     padding: 10px 20px;
-    background-color: #235347;
+    background-color: #E1CBD7;
     outline: none;
     border: none;
-    color: #fff;
+    color: #000;
 }
 
 form input::placeholder{
-    color: #fff;
+    color: #000;
 }
 
 
 form #nome,
 form #sobrenome {
     width: calc(50% - 10px);
+    border-radius: 5px;
 }
 
-form #email,
-form #password{
+form #email{
     width: 100%;
+    border-radius: 5px;
+}
+
+form #password{
+    width: calc(50% - 10px);
+    border-radius: 5px;
+}
+
+form #idade{
+    width: calc(50% - 10px);
+    border-radius: 5px;
+}
+
+form #telefone{
+    width: calc(50% - 10px);
+    border-radius: 5px;
+}
+
+#feminino,
+#masculino{
+display: flex;
+border-radius: 5px;
 }
 
 .button{
     width: 100%;
-    color: #fff;
-    background-color: #235347;
-    /* height: 80px */
+    color: #000;
+    background-color: #E1CBD7;
     padding: 15px 40px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    justify-content: center;
 
 }
 
