@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #0b2b26;
+
+    /* df, jcc e aic */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    height: 80%;
+    background-color: #0b2b26;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8eb69b;
+
+    display: flex;
+
+    /* Com este comando apenas os elementos dentro do container são mostrados */
+    overflow: hidden;
+    padding: 20px;
+}
+
+.img, 
+.login {
+    width: 50%;
+    height: 100%;
+}
+
+.img{
+    background-image: url("../image/download.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center*/
+
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1{
+    color: #fff;
+    margin-bottom: 15px;
+}
+.login p{
+    color: #bebebb;
+}
+
+form{
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form input{ 
+/* Existem 4 paddings (top, right, bottom e left) */
+/* No css para economizarmos linha, podemos utilizar shorthands (atalhos) */
+/* Shorthand é um comando que pode englobar várias, nesse caso, o comando padding engloba os 4 paddings possiveis! */
+/* padding: 10px; -> Coloca 10px na parte superior (top), direita (right), inferior (bottom) e esquerda (left) */
+/* padding: 10px 20px; -> Coloca 10px na parte superior (top) e inferior (bottom), 20px nas laterais (right e left) */
+/* padding: 10px 20px 15px 40px; -> Coloca 10px na parte superior (top), 20px na direita (right),
+ 15px inferior (bottom) e 40 px na esquerda (left) */
+
+    padding: 10px 20px;
+    background-color: #235347;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+
+form #nome,
+form #sobrenome {
+    width: calc(50% - 10px);
+}
+
+form #email,
+form #password{
+    width: 100%;
+}
+
+.button{
+    width: 100%;
+    color: #fff;
+    background-color: #235347;
+    /* height: 80px */
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.containerRegister  {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.containerRegister hr {
+    width: 35%;
+    height: 1px;
+}
+
+.containerButtons{
+    width: 100%;
+
+    margin-top: 20px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.register{
+    width: calc(50% - 10px);
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
